@@ -1,0 +1,23 @@
+{
+ "name": "Fragment N\u00ba 30 \u00b7 Dossier N\u00ba 001",
+ "description": "A numbered fragment of a BLACKSITE dossier. Worthless alone. Registered back to the vault before its window closes, it pays a share of 3,000,000 $SITE when the dossier declassifies.",
+ "image": "https://blacksite.bond/img/fragments/30.png",
+ "attributes": [
+  {
+   "trait_type": "Dossier",
+   "value": 1
+  },
+  {
+   "trait_type": "Fragment",
+   "value": 30
+  },
+  {
+   "trait_type": "Class",
+   "value": "Standard"
+  },
+  {
+   "trait_type": "Shares",
+   "value": 1
+  }
+ ]
+}
