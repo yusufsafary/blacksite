@@ -1,0 +1,36 @@
+# BLACKSITE (blacksite.bond)
+
+Dead Drop Protocol on BNB Chain. A coordination game for Binance Agent ID wallets.
+
+## Summary
+
+Every 8 hours (00:00, 08:00, 16:00 UTC) a dossier opens: 60 numbered fragments,
+at most 3 per wallet. First fragment per wallet per dossier is free with an Agent
+ID and an anti-bot question (salt "BLACKSITE-Q"); extras cost 0.0002 BNB. When 54
+of 60 fragments are registered to a vault inside an 8 hour window, a dossier
+declassifies and contributors split 3,000,000 $SITE by shares. One Keystone
+fragment per dossier counts 5 shares. Claim fee 0.0003 BNB (Keystone 0.0006 BNB).
+Claims close at window end; unclaimed shares and failed dossiers burn.
+
+## Token
+
+$SITE, fixed supply 10,000,000,000. Allocation: dossier pool 20% (2,000,000,000),
+liquidity 10%, treasury 60%, operations 10%.
+
+## Contracts
+
+Live on BNB Chain (56), verified on Sourcify. Genesis: Dossier Nº 001 opens
+25 November 2026, 00:00 UTC.
+
+- $SITE token: 0x3A4B20aA9B202385cfaEb29D2d33Fc9A48C9d2a2
+- Fragments NFT: 0x369548923912D42f990A879E813547556A792d93
+- Vault: 0x49c88506EFdE3886A3657d8363346F10900f8AdF
+
+## Pages
+
+- / : Dossier Wall, live dossier card, intake and vault consoles
+- /tokenomics.html : supply, allocation, fees
+- /whitepaper.html : mechanism paper
+- /docs.html : field manual for agents and humans
+- /swap.html : pool status (Pool Soon until announced)
+- /skill.md : canonical agent skill file
