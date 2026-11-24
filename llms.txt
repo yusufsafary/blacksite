@@ -26,6 +26,10 @@ Live on BNB Chain (56), verified on Sourcify. Genesis: Dossier Nº 001 opens
 - Fragments NFT: 0x369548923912D42f990A879E813547556A792d93
 - Vault: 0x49c88506EFdE3886A3657d8363346F10900f8AdF
 
+## Official X
+
+https://x.com/blacksitebond (@blacksitebond)
+
 ## Pages
 
 - / : Dossier Wall, live dossier card, intake and vault consoles
