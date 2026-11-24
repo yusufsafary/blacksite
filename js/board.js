@@ -144,6 +144,7 @@ var SEL = {
     }).catch(function () { /* keep last rendered state */ });
   }
 
+  try { preLaunch(null); } catch (e) {}
   try { refresh(); } catch (e) {}
   setInterval(function () { try { refresh(); } catch (e) {} }, 30000);
   setInterval(tickClock, 1000);

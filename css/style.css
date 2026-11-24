@@ -243,5 +243,31 @@ table.file tr td:first-child{font-family:Mono,monospace;font-size:12px;letter-sp
 .swap-panel .stamp2{position:absolute;right:18px;top:18px;font-family:Elite,monospace;color:var(--red);border:3px solid var(--red);padding:6px 11px 3px;font-size:14px;letter-spacing:.12em;transform:rotate(-7deg);background:rgba(247,244,236,.85)}
 .pool-row{display:flex;justify-content:space-between;gap:14px;border:2px solid var(--ink);padding:14px 16px;margin-top:14px;font-family:Mono,monospace;font-size:13px;letter-spacing:.06em;background:#fff;flex-wrap:wrap}
 footer .tba{color:#8f8b80;font-size:14px;display:block;padding:4px 0}
+/* ===== MOBILE FIX LAYER (2026-11-24) ===== */
+html,body{overflow-x:clip}
+@media(max-width:760px){
+  .strip .wrap{flex-direction:column;align-items:flex-start;gap:3px;padding-top:9px;padding-bottom:9px}
+  .strip{font-size:10px;letter-spacing:.12em}
+  .strip span{white-space:nowrap}
+  .kicker{font-size:11px;letter-spacing:.18em;line-height:1.7}
+  .strip3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .strip3>div{min-width:0;padding:14px 12px 12px}
+  .strip3 .num{font-size:32px}
+  .strip3 .lbl{font-size:9.5px;letter-spacing:.14em}
+  .dossier{padding:22px 16px 18px;box-shadow:6px 6px 0 var(--ink)}
+  .dossier .tab{font-size:9.5px;letter-spacing:.1em}
+  .seal{width:66px;height:66px;top:-32px;right:2px}
+  .step{grid-template-columns:52px 1fr;align-items:start;gap:14px;padding:20px 2px}
+  .step .n{font-size:42px;margin-top:0}
+  .step h4{font-size:24px}
+  .panel{box-shadow:5px 5px 0 var(--ink);padding:19px 16px}
+  .panel.dark{box-shadow:5px 5px 0 var(--red)}
+  .swap-panel{box-shadow:6px 6px 0 var(--ink);padding:24px 18px}
+  .console{gap:20px}
+  .wall{gap:4px}
+  .cell{font-size:12px}
+  .hero .wrap:before{display:none}
+}
+
 .note-box{border:2px solid var(--ink);background:#fff;padding:16px 18px;font-family:Elite,monospace;font-size:15px;line-height:1.55;margin:20px 0}
 .note-box b{color:var(--red);font-weight:400}
