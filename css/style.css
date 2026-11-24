@@ -268,6 +268,22 @@ html,body{overflow-x:clip}
   .cell{font-size:12px}
   .hero .wrap:before{display:none}
 }
+/* ===== MOBILE FIX LAYER 2 (2026-11-24, 360px audit) ===== */
+@media(max-width:900px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.hero .wrap>*{min-width:0}}
+@media(max-width:760px){
+  .dossier{transform:none}
+  .doss-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .hero-meta{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero-meta>div{min-width:0}
+  .facts .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts .f{padding:16px 14px;border-top:1px dashed rgba(255,255,255,.35)}
+  .doc .mono{overflow-wrap:anywhere}
+  table.file td{word-break:break-word}
+  .hero-meta .k{font-size:9px;letter-spacing:.09em}
+  .hero-meta div{padding:10px 9px}
+  .dossier .tab{padding-right:66px;font-size:9px;letter-spacing:.05em;flex-wrap:nowrap;white-space:nowrap}
+}
+
 
 .note-box{border:2px solid var(--ink);background:#fff;padding:16px 18px;font-family:Elite,monospace;font-size:15px;line-height:1.55;margin:20px 0}
 .note-box b{color:var(--red);font-weight:400}
