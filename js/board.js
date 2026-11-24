@@ -62,13 +62,19 @@ var SEL = {
     var wall = $('wallgrid'); if (!wall) return;
     wall.innerHTML = '';
     var missing = [];
+    var firstPaint = !window.__wallPainted;
+    var prevRec = window.__prevRec || {};
     for (var n = 1; n <= CONFIG.fragmentsPerDossier; n++) {
       var c = document.createElement('div');
       if (keystone && n === keystone) { c.className = 'cell key'; c.innerHTML = n + '<small>KEY</small>'; }
       else if (recovered && recovered[n]) { c.className = 'cell'; c.textContent = n; }
       else { c.className = 'cell miss'; c.textContent = n; missing.push(n); }
+      if (firstPaint) { c.classList.add('pop'); c.style.animationDelay = ((n - 1) * 13) + 'ms'; }
+      else if (recovered && recovered[n] && !prevRec[n]) { c.classList.add('pop'); }
       wall.appendChild(c);
     }
+    window.__wallPainted = true;
+    window.__prevRec = recovered || {};
     var nums = $('missnums');
     if (nums) nums.innerHTML = missing.map(function (n) { return '<b>' + pad2(n) + '</b>'; }).join(' ');
     var lr = $('lg-recovered'), lm = $('lg-missing'), lk = $('lg-keystone');
